@@ -29,7 +29,7 @@
 }
 
 .show-menu .hamburguer{
-    right: 16rem;
+    right: 2rem;
 }
 
 .line {
@@ -60,7 +60,7 @@
 
 .hamburguer span{
     position: absolute;
-    left: 3rem;
+    right: 3rem;
     height: 2rem;
     width: 6rem;
     display: flex;
@@ -75,11 +75,11 @@
 .hamburguer span::before{
     content: "";
     position: absolute;
-    border-right: .5rem solid #288;
+    border-right: .5rem solid transparent;
     border-top: .5rem solid transparent;
-    border-left: .5rem solid transparent;
+    border-left: .5rem solid #288;
     border-bottom: .5rem solid transparent;
-    left: -1rem;
+    right: -1rem;
 }
 
 .show-menu .hamburguer:hover span{
