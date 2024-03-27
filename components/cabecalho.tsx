@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Cabecalho() {
   return (
-    <div className="py-16 px-4 max-w-screen-xl mx-auto">
+    <div className="mt-16 px-8 max-w-screen-xl mx-auto">
       <span className="uppercase font-bold text-info text-lg md:text-xl lg:text-2xl">
         Hello, my name is Victor
       </span>
