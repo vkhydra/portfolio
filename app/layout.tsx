@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://victorkulessa.com.br",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 
