@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const urlString = "https://victorkulessa.com.br";
 
 export const metadata: Metadata = {
   title: "Victor Kulessa",
@@ -11,10 +12,18 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   openGraph: {
+    title: "Victor Kulessa",
+    description: "Victor Kulessa's personal website",
+    locale: "pt-BR",
     type: "website",
-    locale: "en_US",
-    url: "https://victorkulessa.com.br",
-    images: ["/og-image.svg"],
+    url: `${urlString}`,
+    images: [
+      {
+        url: `${urlString}/og-image.png`,
+        width: 800,
+        height: 400,
+      },
+    ],
   },
 };
 
