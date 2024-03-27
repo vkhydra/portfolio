@@ -1,6 +1,8 @@
 import Cabecalho from "../components/cabecalho";
 import Rodape from "../components/rodape";
 import Menu from "../components/menu";
+import Sobre from "../components/sobre";
+import Projetos from "../components/projetos";
 
 export default function Home() {
   return (
@@ -9,7 +11,10 @@ export default function Home() {
         <Menu />
         <Cabecalho />
       </header>
-      <section></section>
+      <section>
+        <Sobre />
+        <Projetos />
+      </section>
       <footer>
         <Rodape />
       </footer>

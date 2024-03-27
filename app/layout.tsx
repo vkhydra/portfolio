@@ -5,8 +5,17 @@ import "@/styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Victor Bruno Kulessa",
-  description: "Victor Bruno Kulessa's personal website",
+  title: "Victor Kulessa",
+  description: "Victor Kulessa's personal website",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://victorkulessa.com.br",
+    images: ["/og-image.svg"],
+  },
 };
 
 export default function RootLayout({

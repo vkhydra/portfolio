@@ -20,10 +20,10 @@ export default function Menu() {
   }
 
   return (
-    <div className="navbar py-16 px-4 max-w-screen-xl mx-auto">
+    <div className="navbar p-8 pb-0 max-w-screen-xl mx-auto">
       <div className="navbar-start">
         <div className="avatar">
-          <div className="rounded-full w-12">
+          <div className="rounded-full w-20">
             <Image
               src="/victor-kulessa.jpg"
               alt="Foto de Perfil de Victor Kulessa"
@@ -32,7 +32,7 @@ export default function Menu() {
             />
           </div>
         </div>
-        <h1 className="p-4 text-xl font-bold">Victor Kulessa</h1>
+        <h1 className="p-4 text-xl md:text-2xl font-bold">Victor Kulessa</h1>
       </div>
 
       <div className="navbar-end">
