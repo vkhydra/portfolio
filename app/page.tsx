@@ -4,8 +4,8 @@ import Menu from "../components/menu";
 
 export default function Home() {
   return (
-    <main>
-      <header className="bg-base-100 h-screen">
+    <main className="bg-base-300">
+      <header>
         <Menu />
         <Cabecalho />
       </header>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Menu() {
   function Dropdown() {
     return (
@@ -19,15 +20,34 @@ export default function Menu() {
   }
 
   return (
-    <div className="navbar">
+    <div className="navbar py-16 px-4 max-w-screen-xl mx-auto">
       <div className="navbar-start">
+        <div className="avatar">
+          <div className="rounded-full w-12">
+            <Image
+              src="/victor-kulessa.jpg"
+              alt="Foto de Perfil de Victor Kulessa"
+              width={460}
+              height={460}
+            />
+          </div>
+        </div>
+        <h1 className="p-4 text-xl font-bold">Victor Kulessa</h1>
+      </div>
+
+      <div className="navbar-end">
+        {" "}
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-outline btn-circle self-center"
+          >
             <Dropdown />
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-300 rounded-box w-52 right-0 "
           >
             <li>
               <a href="/">Home</a>
@@ -40,48 +60,6 @@ export default function Menu() {
             </li>
             <li>
               <a href="#contact-me">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="navbar-center">
-        <h1 className="font-medium">Victor Bruno Kulessa</h1>
-      </div>
-      <div className="navbar-end">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn">
-            Theme
-            <svg
-              width="12px"
-              height="12px"
-              className="h-2 w-2 fill-current opacity-60 inline-block"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 2048 2048"
-            >
-              <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-52 mt-2 right-0"
-          >
-            <li>
-              <input
-                type="radio"
-                name="theme-dropdown"
-                className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                aria-label="🌑 Dark"
-                value="dark"
-              />
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="theme-dropdown"
-                className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                aria-label="🎹 Synthwave"
-                value="synthwave"
-              />
             </li>
           </ul>
         </div>
