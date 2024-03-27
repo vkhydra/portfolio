@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-const urlString = "https://victor.kulessa.com.br";
+const domain = "victor.kulessa.com.br";
+const urlString = `https://${domain}`;
 
 export const metadata: Metadata = {
   title: "Victor Kulessa",
@@ -17,6 +18,20 @@ export const metadata: Metadata = {
     locale: "pt-BR",
     type: "website",
     url: `${urlString}`,
+    images: [
+      {
+        url: `${urlString}/og-image.png`,
+        width: 800,
+        height: 400,
+      },
+    ],
+  },
+  twitter: {
+    title: "Victor Kulessa",
+    description: "Victor Kulessa's personal website",
+    card: "summary_large_image",
+    site: "@_vkulessa",
+    creator: "@_vkulessa",
     images: [
       {
         url: `${urlString}/og-image.png`,
