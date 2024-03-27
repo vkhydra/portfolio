@@ -1,6 +1,6 @@
 export default function Projetos() {
   return (
-    <div className="mt-16 max-w-screen-xl mx-auto">
+    <div id="projects" className="mt-16 max-w-screen-xl mx-auto">
       <h2 className="uppercase font-bold text-lg md:text-xl lg:text-2xl text-center">
         Projects
       </h2>

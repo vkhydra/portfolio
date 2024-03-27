@@ -1,6 +1,9 @@
 export default function Sobre() {
   return (
-    <div className="mt-16 px-8 max-w-screen-xl mx-auto grid md:grid-cols-2 gap-8">
+    <div
+      id="about"
+      className="mt-16 px-8 max-w-screen-xl mx-auto grid md:grid-cols-2 gap-8"
+    >
       <div>
         <h2 className="uppercase font-bold text-lg md:text-xl lg:text-2xl">
           About Me
