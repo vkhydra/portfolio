@@ -43,7 +43,7 @@ export default function CarouselItem({
           target="_blank"
           rel="noopener noreferrer"
         >
-          Acessar
+          Access
         </a>
       )}
     </Card>
