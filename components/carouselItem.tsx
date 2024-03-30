@@ -22,7 +22,7 @@ export default function CarouselItem({
   isActive?: boolean;
 }) {
   return (
-    <Card className="bg-neutral gap-1">
+    <Card className="bg-base-100 text-base-content gap-1">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>
