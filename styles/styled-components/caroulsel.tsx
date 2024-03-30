@@ -10,7 +10,6 @@ export const Button = styled.button<{ $prev?: boolean; $next?: boolean }>`
   top: 50%;
   transform: translateY(-50%);
   border: none;
-  color: #fff;
   cursor: pointer;
   ${(props) => props.$prev && `left: -4rem;`}
   ${(props) => props.$next && `right: -4rem;`};
