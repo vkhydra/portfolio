@@ -15,7 +15,7 @@ export default function Carousel() {
     {
       title: "FocusTime",
       description:
-        "É um projeto desenvolvido para aqueles que ficam muito tempo parados com seus afazeres(trabalho, estudos, jogos), ou simplesmente não praticam alongamentos para sua saúde corporal.",
+        "It's a project designed for those who spend a lot of time idle (work, studies, games), or simply don't practice stretching for their body's health.",
       link: "https://focustime.vercel.app/ ",
       technologies: ["Next"],
     },
