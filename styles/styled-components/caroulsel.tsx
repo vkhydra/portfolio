@@ -12,8 +12,8 @@ export const Button = styled.button<{ $prev?: boolean; $next?: boolean }>`
   border: none;
   color: #fff;
   cursor: pointer;
-  ${(props) => props.$prev && `left: -5rem;`}
-  ${(props) => props.$next && `right: -5rem;`};
+  ${(props) => props.$prev && `left: -4rem;`}
+  ${(props) => props.$next && `right: -4rem;`};
 `;
 // carouselItem
 
