@@ -19,12 +19,6 @@ export default function Carousel() {
       link: "https://focustime.vercel.app/ ",
       technologies: ["Next"],
     },
-    {
-      title: "Em Breve",
-      description: "",
-      link: "",
-      technologies: ["Em Breve"],
-    },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
