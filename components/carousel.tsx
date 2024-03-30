@@ -22,7 +22,7 @@ export default function Carousel() {
     {
       title: "Em Breve",
       description: "",
-      link: "#",
+      link: "",
       technologies: ["Em Breve"],
     },
   ];
@@ -37,7 +37,7 @@ export default function Carousel() {
   };
 
   return (
-    <CarouselContainer className="max-w-md mx-auto mt-11">
+    <CarouselContainer className="max-w-md h-full mx-auto mt-11">
       <CarouselWrapper>
         {projects
           .filter((project, index) => index === currentSlide)
@@ -51,11 +51,11 @@ export default function Carousel() {
             />
           ))}
       </CarouselWrapper>
-      <Button prev onClick={handlePrev}>
-        <ArrowLeftCircle />
+      <Button $prev onClick={handlePrev}>
+        <ArrowLeftCircle className="w-10" />
       </Button>
-      <Button next onClick={handleNext}>
-        <ArrowRightCircle />
+      <Button $next onClick={handleNext}>
+        <ArrowRightCircle className="w-10" />
       </Button>
     </CarouselContainer>
   );

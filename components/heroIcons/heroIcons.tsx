@@ -1,10 +1,10 @@
-export function ArrowLeftCircle() {
+export function ArrowLeftCircle({ className }: { className: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
       fill="currentColor"
-      className="w-5 h-5"
+      className={className}
     >
       <g clipPath="url(#a)">
         <path
@@ -22,13 +22,13 @@ export function ArrowLeftCircle() {
   );
 }
 
-export function ArrowRightCircle() {
+export function ArrowRightCircle({ className }: { className: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
       fill="currentColor"
-      className="w-5 h-5"
+      className={className}
     >
       <path
         fillRule="evenodd"

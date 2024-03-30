@@ -17,7 +17,7 @@ export default function CarouselItem({
 }: {
   title: string;
   description: string;
-  link?: string;
+  link: string;
   technologies: string[];
   isActive?: boolean;
 }) {
@@ -28,20 +28,24 @@ export default function CarouselItem({
       </CardHeader>
       <CardBody className="gap-2">
         <CardDescription>{description}</CardDescription>
-        <CardTechnologies>
+        <CardTechnologies className="self-center">
           {technologies.map((tech) => (
             <CardTech key={tech}>{tech}</CardTech>
           ))}
         </CardTechnologies>
       </CardBody>
-      <a
-        className="btn mt-[.5rem]"
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Acessar
-      </a>
+      {link.length === 0 ? (
+        ""
+      ) : (
+        <a
+          className="btn mt-[.5rem] w-fit px-16 self-center"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Acessar
+        </a>
+      )}
     </Card>
   );
 }
